@@ -2,8 +2,8 @@ module.exports = {
     devServer: {
       proxy: {
         '^/api': {
-          target: 'http://localhost:3070',
-          changeOrigin: true
+          target: 'https://api.ic.peplink.com/api/oauth2/token',
+          changeOrigin: false
         },
       }
     }
